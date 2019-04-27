@@ -7,4 +7,4 @@ before_install:
   - docker build -f Dockerfile.dev -t c-wilk/docker-react .
 
 script:
-  - docker run c-wilker/docker-react npm run test -- --coverage
+  - docker run c-wilk/docker-react npm run test -- --coverage
