@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -f Dockerfile.dev -t c-wilk/docker-react .
+  - docker build -t c-wilk/docker-react -f Dockerfile.dev .
 
 script:
   - docker run c-wilk/docker-react npm run test -- --coverage
